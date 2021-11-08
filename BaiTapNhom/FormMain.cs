@@ -39,18 +39,7 @@ namespace BaiTapNhom
             HangHoa.Show();
         }
 
-        private void nhậpHàngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form NH = new FormNhapHang();
-            NH.Show();
-        }
-
-        private void chiTiếtNhậpHàngToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form CTNH = new FormCTNH();
-            CTNH.Show();
-        }
-
+        
         private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form KH = new FormKhachHang();
@@ -63,17 +52,7 @@ namespace BaiTapNhom
             NV.Show();
         }
 
-        private void hóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form HD = new FormHoaDon();
-            HD.Show();
-        }
-
-        private void chiTiếtHóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form CTHD = new FormCTHD();
-            CTHD.Show();
-        }
+        
 
         private void kháchHàngToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -133,6 +112,36 @@ namespace BaiTapNhom
         {
             Form TKNCC = new FormTKNCC();
             TKNCC.Show();
+        }
+
+        private void hóaĐơnToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Form HD = new FormHoaDon();
+            HD.Show();
+        }
+
+        private void chiTiếtHóaĐơnToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Form CTHD = new FormCTHD();
+            CTHD.Show();
+        }
+
+        private void nhậpHàngToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Form NH = new FormNhapHang();
+            NH.Show();
+        }
+
+        private void chiTiếtNhậpHàngToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Form CTNH = new FormCTNH();
+            CTNH.Show();
+        }
+
+        private void hóaĐơnToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form TKHDon = new FormTKHDon();
+            TKHDon.Show();
         }
     }
 }
