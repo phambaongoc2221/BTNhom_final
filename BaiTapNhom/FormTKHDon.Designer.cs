@@ -29,140 +29,173 @@ namespace BaiTapNhom
         /// </summary>
         private void InitializeComponent()
         {
-            this.cboMaNCC = new System.Windows.Forms.ComboBox();
-            this.DataGrid_TimKiemNH = new System.Windows.Forms.DataGridView();
-            this.btnThoat = new System.Windows.Forms.Button();
-            this.btnTimKiem = new System.Windows.Forms.Button();
-            this.txtNgaynhap = new System.Windows.Forms.TextBox();
-            this.cboMaNhap = new System.Windows.Forms.ComboBox();
-            this.radioNgaynhap = new System.Windows.Forms.RadioButton();
-            this.radioMaNCC = new System.Windows.Forms.RadioButton();
-            this.radioMaNhap = new System.Windows.Forms.RadioButton();
+            this.dataGridViewTKHD = new System.Windows.Forms.DataGridView();
+            this.textNgaytao = new System.Windows.Forms.TextBox();
+            this.cboMhd = new System.Windows.Forms.ComboBox();
+            this.cboMkh = new System.Windows.Forms.ComboBox();
+            this.cboMnv = new System.Windows.Forms.ComboBox();
+            this.buttonThoat = new System.Windows.Forms.Button();
+            this.buttonTimkiem = new System.Windows.Forms.Button();
+            this.radioNgaytao = new System.Windows.Forms.RadioButton();
+            this.radioMnv = new System.Windows.Forms.RadioButton();
+            this.radioMkh = new System.Windows.Forms.RadioButton();
+            this.radioMhd = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGrid_TimKiemNH)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTKHD)).BeginInit();
             this.SuspendLayout();
             // 
-            // cboMaNCC
+            // dataGridViewTKHD
             // 
-            this.cboMaNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboMaNCC.FormattingEnabled = true;
-            this.cboMaNCC.Location = new System.Drawing.Point(243, 150);
-            this.cboMaNCC.Name = "cboMaNCC";
-            this.cboMaNCC.Size = new System.Drawing.Size(363, 33);
-            this.cboMaNCC.TabIndex = 36;
+            this.dataGridViewTKHD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTKHD.Location = new System.Drawing.Point(37, 259);
+            this.dataGridViewTKHD.Name = "dataGridViewTKHD";
+            this.dataGridViewTKHD.RowHeadersWidth = 51;
+            this.dataGridViewTKHD.RowTemplate.Height = 24;
+            this.dataGridViewTKHD.Size = new System.Drawing.Size(684, 169);
+            this.dataGridViewTKHD.TabIndex = 17;
             // 
-            // DataGrid_TimKiemNH
+            // textNgaytao
             // 
-            this.DataGrid_TimKiemNH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGrid_TimKiemNH.Location = new System.Drawing.Point(74, 261);
-            this.DataGrid_TimKiemNH.Name = "DataGrid_TimKiemNH";
-            this.DataGrid_TimKiemNH.RowHeadersWidth = 51;
-            this.DataGrid_TimKiemNH.RowTemplate.Height = 24;
-            this.DataGrid_TimKiemNH.Size = new System.Drawing.Size(644, 166);
-            this.DataGrid_TimKiemNH.TabIndex = 35;
+            this.textNgaytao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textNgaytao.Location = new System.Drawing.Point(226, 200);
+            this.textNgaytao.Name = "textNgaytao";
+            this.textNgaytao.Size = new System.Drawing.Size(326, 30);
+            this.textNgaytao.TabIndex = 16;
             // 
-            // btnThoat
+            // cboMhd
             // 
-            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(627, 178);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(134, 39);
-            this.btnThoat.TabIndex = 33;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = true;
+            this.cboMhd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboMhd.FormattingEnabled = true;
+            this.cboMhd.Location = new System.Drawing.Point(226, 83);
+            this.cboMhd.Name = "cboMhd";
+            this.cboMhd.Size = new System.Drawing.Size(326, 33);
+            this.cboMhd.TabIndex = 13;
             // 
-            // btnTimKiem
+            // cboMkh
             // 
-            this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiem.Location = new System.Drawing.Point(627, 118);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(134, 39);
-            this.btnTimKiem.TabIndex = 34;
-            this.btnTimKiem.Text = "Tìm Kiếm";
-            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.cboMkh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboMkh.FormattingEnabled = true;
+            this.cboMkh.Location = new System.Drawing.Point(226, 122);
+            this.cboMkh.Name = "cboMkh";
+            this.cboMkh.Size = new System.Drawing.Size(326, 33);
+            this.cboMkh.TabIndex = 14;
             // 
-            // txtNgaynhap
+            // cboMnv
             // 
-            this.txtNgaynhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNgaynhap.Location = new System.Drawing.Point(243, 199);
-            this.txtNgaynhap.Name = "txtNgaynhap";
-            this.txtNgaynhap.Size = new System.Drawing.Size(363, 30);
-            this.txtNgaynhap.TabIndex = 32;
+            this.cboMnv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboMnv.FormattingEnabled = true;
+            this.cboMnv.Location = new System.Drawing.Point(226, 161);
+            this.cboMnv.Name = "cboMnv";
+            this.cboMnv.Size = new System.Drawing.Size(326, 33);
+            this.cboMnv.TabIndex = 15;
             // 
-            // cboMaNhap
+            // buttonThoat
             // 
-            this.cboMaNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboMaNhap.FormattingEnabled = true;
-            this.cboMaNhap.Location = new System.Drawing.Point(243, 99);
-            this.cboMaNhap.Name = "cboMaNhap";
-            this.cboMaNhap.Size = new System.Drawing.Size(363, 33);
-            this.cboMaNhap.TabIndex = 31;
+            this.buttonThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonThoat.Location = new System.Drawing.Point(593, 159);
+            this.buttonThoat.Name = "buttonThoat";
+            this.buttonThoat.Size = new System.Drawing.Size(118, 35);
+            this.buttonThoat.TabIndex = 11;
+            this.buttonThoat.Text = "Thoát";
+            this.buttonThoat.UseVisualStyleBackColor = true;
+            this.buttonThoat.Click += new System.EventHandler(this.buttonThoat_Click);
             // 
-            // radioNgaynhap
+            // buttonTimkiem
             // 
-            this.radioNgaynhap.AutoSize = true;
-            this.radioNgaynhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioNgaynhap.Location = new System.Drawing.Point(40, 199);
-            this.radioNgaynhap.Name = "radioNgaynhap";
-            this.radioNgaynhap.Size = new System.Drawing.Size(131, 29);
-            this.radioNgaynhap.TabIndex = 28;
-            this.radioNgaynhap.TabStop = true;
-            this.radioNgaynhap.Text = "Ngày Nhập";
-            this.radioNgaynhap.UseVisualStyleBackColor = true;
+            this.buttonTimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTimkiem.Location = new System.Drawing.Point(593, 97);
+            this.buttonTimkiem.Name = "buttonTimkiem";
+            this.buttonTimkiem.Size = new System.Drawing.Size(118, 43);
+            this.buttonTimkiem.TabIndex = 12;
+            this.buttonTimkiem.Text = "Tìm kiếm";
+            this.buttonTimkiem.UseVisualStyleBackColor = true;
+            this.buttonTimkiem.Click += new System.EventHandler(this.buttonTimkiem_Click);
             // 
-            // radioMaNCC
+            // radioNgaytao
             // 
-            this.radioMaNCC.AutoSize = true;
-            this.radioMaNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioMaNCC.Location = new System.Drawing.Point(40, 150);
-            this.radioMaNCC.Name = "radioMaNCC";
-            this.radioMaNCC.Size = new System.Drawing.Size(197, 29);
-            this.radioMaNCC.TabIndex = 29;
-            this.radioMaNCC.TabStop = true;
-            this.radioMaNCC.Text = "Mã Nhà Cung Cấp";
-            this.radioMaNCC.UseVisualStyleBackColor = true;
+            this.radioNgaytao.AutoSize = true;
+            this.radioNgaytao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioNgaytao.Location = new System.Drawing.Point(41, 200);
+            this.radioNgaytao.Name = "radioNgaytao";
+            this.radioNgaytao.Size = new System.Drawing.Size(111, 29);
+            this.radioNgaytao.TabIndex = 7;
+            this.radioNgaytao.TabStop = true;
+            this.radioNgaytao.Text = "Ngày tạo";
+            this.radioNgaytao.UseVisualStyleBackColor = true;
+            this.radioNgaytao.CheckedChanged += new System.EventHandler(this.radioNgaytao_CheckedChanged);
             // 
-            // radioMaNhap
+            // radioMnv
             // 
-            this.radioMaNhap.AutoSize = true;
-            this.radioMaNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioMaNhap.Location = new System.Drawing.Point(40, 99);
-            this.radioMaNhap.Name = "radioMaNhap";
-            this.radioMaNhap.Size = new System.Drawing.Size(113, 29);
-            this.radioMaNhap.TabIndex = 30;
-            this.radioMaNhap.TabStop = true;
-            this.radioMaNhap.Text = "Mã Nhập";
-            this.radioMaNhap.UseVisualStyleBackColor = true;
+            this.radioMnv.AutoSize = true;
+            this.radioMnv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioMnv.Location = new System.Drawing.Point(41, 165);
+            this.radioMnv.Name = "radioMnv";
+            this.radioMnv.Size = new System.Drawing.Size(151, 29);
+            this.radioMnv.TabIndex = 8;
+            this.radioMnv.TabStop = true;
+            this.radioMnv.Text = "Mã nhân viên";
+            this.radioMnv.UseVisualStyleBackColor = true;
+            this.radioMnv.CheckedChanged += new System.EventHandler(this.radioMnv_CheckedChanged);
+            // 
+            // radioMkh
+            // 
+            this.radioMkh.AutoSize = true;
+            this.radioMkh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioMkh.Location = new System.Drawing.Point(41, 130);
+            this.radioMkh.Name = "radioMkh";
+            this.radioMkh.Size = new System.Drawing.Size(168, 29);
+            this.radioMkh.TabIndex = 9;
+            this.radioMkh.TabStop = true;
+            this.radioMkh.Text = "Mã khách hàng";
+            this.radioMkh.UseVisualStyleBackColor = true;
+            this.radioMkh.CheckedChanged += new System.EventHandler(this.radioMkh_CheckedChanged);
+            // 
+            // radioMhd
+            // 
+            this.radioMhd.AutoSize = true;
+            this.radioMhd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioMhd.Location = new System.Drawing.Point(41, 91);
+            this.radioMhd.Name = "radioMhd";
+            this.radioMhd.Size = new System.Drawing.Size(137, 29);
+            this.radioMhd.TabIndex = 10;
+            this.radioMhd.TabStop = true;
+            this.radioMhd.Text = "Mã hóa đơn";
+            this.radioMhd.UseVisualStyleBackColor = true;
+            this.radioMhd.CheckedChanged += new System.EventHandler(this.radioMhd_CheckedChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(168, 24);
+            this.label1.Location = new System.Drawing.Point(195, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(389, 44);
-            this.label1.TabIndex = 27;
+            this.label1.TabIndex = 6;
             this.label1.Text = "TÌM KIẾM HÓA ĐƠN";
             // 
             // FormTKHDon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.cboMaNCC);
-            this.Controls.Add(this.DataGrid_TimKiemNH);
-            this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.btnTimKiem);
-            this.Controls.Add(this.txtNgaynhap);
-            this.Controls.Add(this.cboMaNhap);
-            this.Controls.Add(this.radioNgaynhap);
-            this.Controls.Add(this.radioMaNCC);
-            this.Controls.Add(this.radioMaNhap);
+            this.ClientSize = new System.Drawing.Size(782, 453);
+            this.Controls.Add(this.dataGridViewTKHD);
+            this.Controls.Add(this.textNgaytao);
+            this.Controls.Add(this.cboMhd);
+            this.Controls.Add(this.cboMkh);
+            this.Controls.Add(this.cboMnv);
+            this.Controls.Add(this.buttonThoat);
+            this.Controls.Add(this.buttonTimkiem);
+            this.Controls.Add(this.radioNgaytao);
+            this.Controls.Add(this.radioMnv);
+            this.Controls.Add(this.radioMkh);
+            this.Controls.Add(this.radioMhd);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "FormTKHDon";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TÌM KIẾM HÓA ĐƠN";
-            this.Load += new System.EventHandler(this.FormTKHDon_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DataGrid_TimKiemNH)).EndInit();
+            this.Load += new System.EventHandler(this.FormTKHDon_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTKHD)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,15 +203,17 @@ namespace BaiTapNhom
 
         #endregion
 
-        private System.Windows.Forms.ComboBox cboMaNCC;
-        private System.Windows.Forms.DataGridView DataGrid_TimKiemNH;
-        private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.Button btnTimKiem;
-        private System.Windows.Forms.TextBox txtNgaynhap;
-        private System.Windows.Forms.ComboBox cboMaNhap;
-        private System.Windows.Forms.RadioButton radioNgaynhap;
-        private System.Windows.Forms.RadioButton radioMaNCC;
-        private System.Windows.Forms.RadioButton radioMaNhap;
+        private System.Windows.Forms.DataGridView dataGridViewTKHD;
+        private System.Windows.Forms.TextBox textNgaytao;
+        private System.Windows.Forms.ComboBox cboMhd;
+        private System.Windows.Forms.ComboBox cboMkh;
+        private System.Windows.Forms.ComboBox cboMnv;
+        private System.Windows.Forms.Button buttonThoat;
+        private System.Windows.Forms.Button buttonTimkiem;
+        private System.Windows.Forms.RadioButton radioNgaytao;
+        private System.Windows.Forms.RadioButton radioMnv;
+        private System.Windows.Forms.RadioButton radioMkh;
+        private System.Windows.Forms.RadioButton radioMhd;
         private System.Windows.Forms.Label label1;
     }
 }
