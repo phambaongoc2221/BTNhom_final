@@ -29,8 +29,6 @@ namespace BaiTapNhom
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtGia = new System.Windows.Forms.TextBox();
-            this.radioNhapGia = new System.Windows.Forms.RadioButton();
             this.radioNhapNCC = new System.Windows.Forms.RadioButton();
             this.radioNhapTen = new System.Windows.Forms.RadioButton();
             this.txtNhapTen = new System.Windows.Forms.TextBox();
@@ -43,30 +41,6 @@ namespace BaiTapNhom
             this.cboNCC = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_KetQua)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtGia
-            // 
-            this.txtGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGia.Location = new System.Drawing.Point(186, 207);
-            this.txtGia.Margin = new System.Windows.Forms.Padding(2);
-            this.txtGia.Multiline = true;
-            this.txtGia.Name = "txtGia";
-            this.txtGia.Size = new System.Drawing.Size(344, 31);
-            this.txtGia.TabIndex = 88;
-            // 
-            // radioNhapGia
-            // 
-            this.radioNhapGia.AutoSize = true;
-            this.radioNhapGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.radioNhapGia.Location = new System.Drawing.Point(24, 213);
-            this.radioNhapGia.Margin = new System.Windows.Forms.Padding(2);
-            this.radioNhapGia.Name = "radioNhapGia";
-            this.radioNhapGia.Size = new System.Drawing.Size(150, 29);
-            this.radioNhapGia.TabIndex = 86;
-            this.radioNhapGia.TabStop = true;
-            this.radioNhapGia.Text = "Nhập giá HH:";
-            this.radioNhapGia.UseVisualStyleBackColor = true;
-            this.radioNhapGia.CheckedChanged += new System.EventHandler(this.radioNhapGia_CheckedChanged);
             // 
             // radioNhapNCC
             // 
@@ -123,12 +97,12 @@ namespace BaiTapNhom
             // DataGrid_KetQua
             // 
             this.DataGrid_KetQua.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGrid_KetQua.Location = new System.Drawing.Point(35, 260);
+            this.DataGrid_KetQua.Location = new System.Drawing.Point(35, 239);
             this.DataGrid_KetQua.Margin = new System.Windows.Forms.Padding(2);
             this.DataGrid_KetQua.Name = "DataGrid_KetQua";
             this.DataGrid_KetQua.RowHeadersWidth = 51;
             this.DataGrid_KetQua.RowTemplate.Height = 24;
-            this.DataGrid_KetQua.Size = new System.Drawing.Size(700, 160);
+            this.DataGrid_KetQua.Size = new System.Drawing.Size(700, 181);
             this.DataGrid_KetQua.TabIndex = 81;
             // 
             // btnTimKiem
@@ -192,8 +166,6 @@ namespace BaiTapNhom
             this.ClientSize = new System.Drawing.Size(782, 453);
             this.Controls.Add(this.cboNCC);
             this.Controls.Add(this.cboMaHH);
-            this.Controls.Add(this.txtGia);
-            this.Controls.Add(this.radioNhapGia);
             this.Controls.Add(this.radioNhapNCC);
             this.Controls.Add(this.radioNhapTen);
             this.Controls.Add(this.txtNhapTen);
@@ -214,8 +186,6 @@ namespace BaiTapNhom
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtGia;
-        private System.Windows.Forms.RadioButton radioNhapGia;
         private System.Windows.Forms.RadioButton radioNhapNCC;
         private System.Windows.Forms.RadioButton radioNhapTen;
         private System.Windows.Forms.TextBox txtNhapTen;

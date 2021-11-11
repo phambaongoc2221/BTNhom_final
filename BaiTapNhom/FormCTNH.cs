@@ -24,18 +24,34 @@ namespace BaiTapNhom
             DataTable dta = new DataTable();
             dta = kn.Lay_DulieuBang("select * from chiTiet_nhapHang");
             GridViewCTNH.DataSource = dta;
+           
+            Hienthi_Dulieu();
+
+            
+        }
+
+        private void BangNhapHang()
+        {
+            DataTable dta = new DataTable();
+            dta = kn.Lay_DulieuBang("Select * From nhapHang order by manhap");
             cboManhap.DataSource = dta;
             cboManhap.DisplayMember = "manhap";
             cboManhap.ValueMember = "manhap";
+        }
+
+        private void BangHangHoa()
+        {
+            DataTable dta = new DataTable();
+            dta = kn.Lay_DulieuBang("Select * From hangHoa order by mahh");
             cboMahang.DataSource = dta;
             cboMahang.DisplayMember = "mahh";
             cboMahang.ValueMember = "mahh";
-            Hienthi_Dulieu();
         }
 
         private void Hienthi_Dulieu()
         {
-
+            BangNhapHang();
+            BangHangHoa();
             cboManhap.DataBindings.Clear();
             cboManhap.DataBindings.Add("Text", GridViewCTNH.DataSource, "manhap");
 

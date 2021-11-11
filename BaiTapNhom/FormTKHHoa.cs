@@ -40,11 +40,7 @@ namespace BaiTapNhom
                 sqltk = "select * from hangHoa where mancc like '" + cboNCC.Text + "'";
                 dta = connect_db.Lay_DulieuBang(sqltk);
             }
-            if (radioNhapGia.Checked == true)
-            {
-                sqltk = "select * from hangHoa where dongia like '" + txtGia.Text + "'";
-                dta = connect_db.Lay_DulieuBang(sqltk);
-            }
+            
 
             DataGrid_KetQua.DataSource = dta;
             DataGrid_KetQua.Columns[0].HeaderText = "Mã Hàng";
@@ -84,7 +80,7 @@ namespace BaiTapNhom
             cboMaHH.Enabled = true;
             txtNhapTen.Enabled = false;
             cboNCC.Enabled = false;
-            txtGia.Enabled = false;
+            //txtGia.Enabled = false;
         }
 
         private void radioNhapTen_CheckedChanged(object sender, EventArgs e)
@@ -94,7 +90,7 @@ namespace BaiTapNhom
             txtNhapTen.Enabled = true;
             cboMaHH.Enabled = false;
             cboNCC.Enabled = false;
-            txtGia.Enabled = false;
+            //txtGia.Enabled = false;
         }
 
         private void radioNhapNCC_CheckedChanged(object sender, EventArgs e)
@@ -102,19 +98,11 @@ namespace BaiTapNhom
             cboNCC.Focus();
             cboNCC.Enabled = true;
             txtNhapTen.Enabled = false;
-            cboNCC.Enabled = false;
-            txtGia.Enabled = false;
+            cboMaHH.Enabled = false;
+            //txtGia.Enabled = false;
         }
 
-        private void radioNhapGia_CheckedChanged(object sender, EventArgs e)
-        {
-            txtGia.Focus();
-            txtGia.Enabled = true;
-            txtGia.Clear();
-            txtNhapTen.Enabled = false;
-            cboNCC.Enabled = false;
-            cboMaHH.Enabled = false;
-        }
+        
 
         private void btnThoat_Click(object sender, EventArgs e)
         {

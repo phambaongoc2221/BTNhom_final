@@ -19,15 +19,23 @@ namespace BaiTapNhom
         Connect_db connect_db = new Connect_db();
 
         DataTable dta = new DataTable();
+
+        private void BangNCC()
+        {
+            dta = connect_db.Lay_DulieuBang("Select * From nhaCungCap order by mancc");
+            cboMaNCC.DataSource = dta;
+            cboMaNCC.DisplayMember = "mancc";
+            cboMaNCC.ValueMember = "mancc";
+        }
         private void FormTKNHang_Load(object sender, EventArgs e)
         {
             DataTable dta = connect_db.Lay_DulieuBang("SELECT * FROM nhapHang ORDER BY manhap");
             cboMaNhap.DataSource = dta;
             cboMaNhap.DisplayMember = "manhap";
-            cboMaNCC.DataSource = dta;
-            cboMaNCC.DisplayMember = "mancc";
+            BangNCC();
         }
 
+        
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             string sqltk;

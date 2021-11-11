@@ -96,8 +96,9 @@ namespace BaiTapNhom
             thongbao = MessageBox.Show("Bạn có muốn xóa dữ liệu này không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (thongbao == DialogResult.Yes)
             {
-                string sql_xoa = "Delete nhaCungCap where mancc = '" + txtMaNCC.Text + "'";
-                kn.ThucThi(sql_xoa);
+                string sql_Xoa;
+                sql_Xoa = " DELETE nhaCungCap WHERE mancc = '" + txtMaNCC.Text + "' ";
+                kn.ThucThi(sql_Xoa);
                 BANG_NHACUNGCAP();
             }
         }
