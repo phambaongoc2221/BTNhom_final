@@ -25,15 +25,29 @@ namespace BaiTapNhom
         Connect_db connect_db = new Connect_db();
 
         DataTable dta = new DataTable();
+
+        private void BangKhachHang()
+        {
+            dta = connect_db.Lay_DulieuBang("Select * From khachHang order by makh");
+            cboMkh.DataSource = dta;
+            cboMkh.DisplayMember = "makh";
+            cboMkh.ValueMember = "makh";
+        }
+
+        private void BangNhanVien()
+        {
+            dta = connect_db.Lay_DulieuBang("Select * From nhanVien order by manv");
+            cboMnv.DataSource = dta;
+            cboMnv.DisplayMember = "manv";
+            cboMnv.ValueMember = "manv";
+        }
         private void FormTKHDon_Load_1(object sender, EventArgs e)
         {
             DataTable dta = connect_db.Lay_DulieuBang("SELECT * FROM hoaDon ORDER BY mahd");
             cboMhd.DataSource = dta;
             cboMhd.DisplayMember = "mahd";
-            cboMkh.DataSource = dta;
-            cboMkh.DisplayMember = "makh";
-            cboMnv.DataSource = dta;
-            cboMnv.DisplayMember = "manv";
+            BangKhachHang();
+            BangNhanVien();
         }
 
         private void buttonTimkiem_Click(object sender, EventArgs e)
@@ -57,11 +71,7 @@ namespace BaiTapNhom
                 sqltk = "SELECT * FROM hoaDon WHERE manv LIKE '" + cboMnv.Text + "'";
                 dta = connect_db.Lay_DulieuBang(sqltk);
             }
-            if (radioNgaytao.Checked == true)
-            {
-                sqltk = "SELECT * FROM hoaDon WHERE ngaytao LIKE '" + textNgaytao.Text + "'";
-                dta = connect_db.Lay_DulieuBang(sqltk);
-            }
+            
 
             dataGridViewTKHD.DataSource = dta;
 
@@ -87,7 +97,7 @@ namespace BaiTapNhom
 
             cboMkh.Enabled = false;
             cboMnv.Enabled = false;
-            textNgaytao.Enabled = false;
+            //textNgaytao.Enabled = false;
         }
 
         private void radioMkh_CheckedChanged(object sender, EventArgs e)
@@ -98,7 +108,7 @@ namespace BaiTapNhom
 
             cboMhd.Enabled = false;
             cboMnv.Enabled = false;
-            textNgaytao.Enabled = false;
+            //textNgaytao.Enabled = false;
         }
 
         private void radioMnv_CheckedChanged(object sender, EventArgs e)
@@ -109,20 +119,10 @@ namespace BaiTapNhom
 
             cboMhd.Enabled = false;
             cboMkh.Enabled = false;
-            textNgaytao.Enabled = false;
+            //textNgaytao.Enabled = false;
         }
 
-        private void radioNgaytao_CheckedChanged(object sender, EventArgs e)
-        {
-            textNgaytao.Focus();
-
-            textNgaytao.Enabled = true;
-
-            cboMhd.Enabled = false;
-            cboMnv.Enabled = false;
-            cboMkh.Enabled = false;
-        }
-
+        
         private void buttonThoat_Click(object sender, EventArgs e)
         {
             this.Close();

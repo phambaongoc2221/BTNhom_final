@@ -53,6 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BC_BanHang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BC_BanHang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="BC_CTHD.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -71,19 +77,19 @@
       <DependentUpon>BC_HangHoa.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="BC_HoaDon.cs">
+    <Compile Include="BC_NhapHang1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BC_HoaDon.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="BC_NhapHang.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BC_NhapHang.rpt</DependentUpon>
+      <DependentUpon>BC_NhapHang1.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Connect_db.cs" />
+    <Compile Include="FormBC_BanHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBC_BanHang.Designer.cs">
+      <DependentUpon>FormBC_BanHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormBC_CTHD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,17 +108,11 @@
     <Compile Include="FormBC_HangHoa.Designer.cs">
       <DependentUpon>FormBC_HangHoa.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormBC_HoaDon.cs">
+    <Compile Include="FormBC_NhapHang1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormBC_HoaDon.Designer.cs">
-      <DependentUpon>FormBC_HoaDon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormBC_NhapHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormBC_NhapHang.Designer.cs">
-      <DependentUpon>FormBC_NhapHang.cs</DependentUpon>
+    <Compile Include="FormBC_NhapHang1.Designer.cs">
+      <DependentUpon>FormBC_NhapHang1.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCTHD.cs">
       <SubType>Form</SubType>
@@ -206,6 +206,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BC_BanHang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BC_BanHang.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="BC_CTHD.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>BC_CTHD.cs</LastGenOutput>
@@ -218,13 +222,12 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>BC_HangHoa.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="BC_HoaDon.rpt">
+    <EmbeddedResource Include="BC_NhapHang1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>BC_HoaDon.cs</LastGenOutput>
+      <LastGenOutput>BC_NhapHang1.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="BC_NhapHang.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>BC_NhapHang.cs</LastGenOutput>
+    <EmbeddedResource Include="FormBC_BanHang.resx">
+      <DependentUpon>FormBC_BanHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormBC_CTHD.resx">
       <DependentUpon>FormBC_CTHD.cs</DependentUpon>
@@ -235,11 +238,8 @@
     <EmbeddedResource Include="FormBC_HangHoa.resx">
       <DependentUpon>FormBC_HangHoa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormBC_HoaDon.resx">
-      <DependentUpon>FormBC_HoaDon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormBC_NhapHang.resx">
-      <DependentUpon>FormBC_NhapHang.cs</DependentUpon>
+    <EmbeddedResource Include="FormBC_NhapHang1.resx">
+      <DependentUpon>FormBC_NhapHang1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCTHD.resx">
       <DependentUpon>FormCTHD.cs</DependentUpon>

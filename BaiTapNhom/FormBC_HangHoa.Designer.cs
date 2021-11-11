@@ -50,7 +50,7 @@ namespace BaiTapNhom
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "FormBC_HangHoa";
-            this.Text = "FormBC_HangHoa";
+            this.Text = "BÁO CÁO HÀNG HÓA";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormBC_HangHoa_Load);
             this.ResumeLayout(false);

@@ -43,7 +43,8 @@ namespace BaiTapNhom
         }
         private void Hienthi_Dulieu()
         {
-
+            BangHD();
+            BangHH();
             txtMaCTHD.DataBindings.Clear();
             txtMaCTHD.DataBindings.Add("Text", GridViewCTHD.DataSource, "macthd");
             cboHoadon.DataBindings.Clear();

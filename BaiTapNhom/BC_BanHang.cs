@@ -16,14 +16,14 @@ namespace BaiTapNhom {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class BC_NhapHang : ReportClass {
+    public class BC_BanHang : ReportClass {
         
-        public BC_NhapHang() {
+        public BC_BanHang() {
         }
         
         public override string ResourceName {
             get {
-                return "BC_NhapHang.rpt";
+                return "BC_BanHang.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace BaiTapNhom {
         
         public override string FullResourceName {
             get {
-                return "BaiTapNhom.BC_NhapHang.rpt";
+                return "BaiTapNhom.BC_BanHang.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace BaiTapNhom {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedBC_NhapHang : Component, ICachedReport {
+    public class CachedBC_BanHang : Component, ICachedReport {
         
-        public CachedBC_NhapHang() {
+        public CachedBC_BanHang() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace BaiTapNhom {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            BC_NhapHang rpt = new BC_NhapHang();
+            BC_BanHang rpt = new BC_BanHang();
             rpt.Site = this.Site;
             return rpt;
         }

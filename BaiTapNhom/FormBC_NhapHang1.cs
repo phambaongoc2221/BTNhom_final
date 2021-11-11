@@ -10,20 +10,22 @@ using System.Windows.Forms;
 
 namespace BaiTapNhom
 {
-    public partial class FormBC_HoaDon : Form
+    public partial class FormBC_NhapHang1 : Form
     {
-        public FormBC_HoaDon()
+        public FormBC_NhapHang1()
         {
             InitializeComponent();
         }
+
         Connect_db testConnect = new Connect_db();
-        private void FormBC_HoaDon_Load(object sender, EventArgs e)
+
+        private void FormBC_NhapHang1_Load(object sender, EventArgs e)
         {
             DataTable dta = new DataTable();
-            dta = testConnect.Lay_DulieuBang("SELECT * FROM hoaDon");
-            BC_HoaDon bC_HoaDon = new BC_HoaDon();
-            bC_HoaDon.SetDataSource(dta);
-            crystalReportViewer1.ReportSource = bC_HoaDon;
+            dta = testConnect.Lay_DulieuBang("SELECT * FROM nhapHang");
+            BC_NhapHang1 bC_NhapHang1 = new BC_NhapHang1();
+            bC_NhapHang1.SetDataSource(dta);
+            CRV_NhapHang.ReportSource = bC_NhapHang1;
         }
     }
 }

@@ -86,13 +86,13 @@ namespace BaiTapNhom
 
         private void bCNhậpHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form BCNH = new FormBC_NhapHang();
+            Form BCNH = new FormBC_NhapHang1();
             BCNH.Show();
         }
 
         private void bCHóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form BCHD = new FormBC_HoaDon();
+            Form BCHD = new FormBC_BanHang();
             BCHD.Show();
         }
 

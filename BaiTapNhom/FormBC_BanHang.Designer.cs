@@ -1,7 +1,7 @@
 ﻿
 namespace BaiTapNhom
 {
-    partial class FormBC_NhapHang
+    partial class FormBC_BanHang
     {
         /// <summary>
         /// Required designer variable.
@@ -29,36 +29,36 @@ namespace BaiTapNhom
         /// </summary>
         private void InitializeComponent()
         {
-            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.CRV_BanHang = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // crystalReportViewer1
+            // CRV_BanHang
             // 
-            this.crystalReportViewer1.ActiveViewIndex = -1;
-            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
-            this.crystalReportViewer1.TabIndex = 0;
+            this.CRV_BanHang.ActiveViewIndex = -1;
+            this.CRV_BanHang.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CRV_BanHang.Cursor = System.Windows.Forms.Cursors.Default;
+            this.CRV_BanHang.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CRV_BanHang.Location = new System.Drawing.Point(0, 0);
+            this.CRV_BanHang.Name = "CRV_BanHang";
+            this.CRV_BanHang.Size = new System.Drawing.Size(800, 450);
+            this.CRV_BanHang.TabIndex = 0;
             // 
-            // FormBC_NhapHang
+            // FormBC_BanHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "FormBC_NhapHang";
-            this.Text = "FormBC_NhapHang";
+            this.Controls.Add(this.CRV_BanHang);
+            this.Name = "FormBC_BanHang";
+            this.Text = "BÁO CÁO BÁN HÀNG";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FormBC_NhapHang_Load);
+            this.Load += new System.EventHandler(this.FormBC_BanHang_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer CRV_BanHang;
     }
 }
